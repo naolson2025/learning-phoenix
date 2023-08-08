@@ -1,13 +1,16 @@
 import Config
 
+# Only in tests, remove the complexity from the password hashing algorithm
+config :bcrypt_elixir, :log_rounds, 1
+
 # Configure your database
 #
 # The MIX_TEST_PARTITION environment variable can be used
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :learning_phoenix, LearningPhoenix.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "nickolson",
+  password: "",
   hostname: "localhost",
   database: "learning_phoenix_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,

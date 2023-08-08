@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :learning_phoenix, LearningPhoenix.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "nickolson",
+  password: "",
   hostname: "localhost",
   database: "learning_phoenix_dev",
   stacktrace: true,
